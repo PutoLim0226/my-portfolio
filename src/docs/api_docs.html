@@ -1,0 +1,98 @@
+<section class="api-section">
+  <h3 class="api-section__name">Header</h3>
+  <p class="api-section__desc">Site navigation bar with logo and anchor links.</p>
+  <table class="api-table">
+    <thead><tr><th>Element</th><th>Class</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>Logo</td><td><code>.header__logo</code></td><td>Home link displaying site name</td></tr>
+      <tr><td>Nav</td><td><code>.header__nav</code></td><td>Unordered list of navigation links</td></tr>
+      <tr><td>Link</td><td><code>.header__link</code></td><td>Individual anchor link with hover effect</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="api-section">
+  <h3 class="api-section__name">Hero</h3>
+  <p class="api-section__desc">Full-width introduction banner with headline, subtitle, CTA, and avatar image.</p>
+  <table class="api-table">
+    <thead><tr><th>Prop / Asset</th><th>Type</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>heroImg</td><td>Static import</td><td>Avatar image from <code>assets/hero.png</code></td></tr>
+    </tbody>
+  </table>
+  <table class="api-table">
+    <thead><tr><th>Element</th><th>Class</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>Title</td><td><code>.hero__title</code></td><td>Main heading (h1)</td></tr>
+      <tr><td>Subtitle</td><td><code>.hero__subtitle</code></td><td>Short bio paragraph</td></tr>
+      <tr><td>CTA</td><td><code>.hero__cta</code></td><td>Call-to-action button linking to #projects</td></tr>
+      <tr><td>Image</td><td><code>.hero__image</code></td><td>Rounded avatar image</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="api-section">
+  <h3 class="api-section__name">About</h3>
+  <p class="api-section__desc">Brief "About Me" section describing background and expertise.</p>
+  <table class="api-table">
+    <thead><tr><th>Element</th><th>Class</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>Title</td><td><code>.about__title</code></td><td>Section heading (h2)</td></tr>
+      <tr><td>Text</td><td><code>.about__text</code></td><td>Bio paragraph (max-width 640px, centered)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="api-section">
+  <h3 class="api-section__name">Skills</h3>
+  <p class="api-section__desc">Tech stack displayed as pill-shaped tags.</p>
+  <table class="api-table">
+    <thead><tr><th>Data</th><th>Type</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>skills</td><td>string[]</td><td>Array of skill names: React, PHP, MySQL, Redis, Linux</td></tr>
+    </tbody>
+  </table>
+  <table class="api-table">
+    <thead><tr><th>Element</th><th>Class</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>List</td><td><code>.skills__list</code></td><td>Flex-wrap container for tags</td></tr>
+      <tr><td>Tag</td><td><code>.skills__tag</code></td><td>Individual pill tag with hover lift</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="api-section">
+  <h3 class="api-section__name">Projects</h3>
+  <p class="api-section__desc">Featured project cards in a responsive grid (3→2→1 columns).</p>
+  <table class="api-table">
+    <thead><tr><th>Data Field</th><th>Type</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>title</td><td>string</td><td>Project name used as card heading and React key</td></tr>
+      <tr><td>description</td><td>string</td><td>Brief project summary</td></tr>
+      <tr><td>image</td><td>string (URL)</td><td>Card cover image URL</td></tr>
+      <tr><td>github</td><td>string (URL)</td><td>GitHub repository link</td></tr>
+      <tr><td>demo</td><td>string (URL)</td><td>Live demo link</td></tr>
+    </tbody>
+  </table>
+  <table class="api-table">
+    <thead><tr><th>Element</th><th>Class</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>Grid</td><td><code>.projects__grid</code></td><td>CSS Grid container (responsive columns)</td></tr>
+      <tr><td>Card</td><td><code>.projects__card</code></td><td>Card wrapper with hover shadow + lift</td></tr>
+      <tr><td>Primary Link</td><td><code>.projects__link--primary</code></td><td>Filled accent button (Demo)</td></tr>
+      <tr><td>Secondary Link</td><td><code>.projects__link--secondary</code></td><td>Ghost accent button (GitHub)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="api-section">
+  <h3 class="api-section__name">Footer</h3>
+  <p class="api-section__desc">Simple copyright footer with framework attribution links.</p>
+  <table class="api-table">
+    <thead><tr><th>Element</th><th>Class</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>Text</td><td><code>.footer__text</code></td><td>Copyright line</td></tr>
+      <tr><td>Link</td><td><code>.footer__link</code></td><td>External link to React / Vite</td></tr>
+    </tbody>
+  </table>
+</section>
