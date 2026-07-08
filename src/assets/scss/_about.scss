@@ -1,0 +1,27 @@
+@use 'variables' as *;
+
+.about {
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--border);
+
+  @media (max-width: $tablet) {
+    padding: 2rem 1rem;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    color: var(--text-h);
+    margin: 0 0 1rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__text {
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: var(--text);
+  }
+}
