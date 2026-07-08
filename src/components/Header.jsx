@@ -7,7 +7,6 @@ function Header() {
           <li><a href="#about" className="header__link">About</a></li>
           <li><a href="#skills" className="header__link">Skills</a></li>
           <li><a href="#projects" className="header__link">Projects</a></li>
-          <li><a href="#api-docs" className="header__link">API Docs</a></li>
         </ul>
       </nav>
     </header>
