@@ -62,22 +62,6 @@ For multi-step tasks, state a brief plan:
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
 ## 5. Agent Skill & Token Optimization (每次啟動時執行)
-- **RTK Token 節省**：在對話啟動或執行過程中，一定要執行 rtk (RTK Token Savings) 以節省 token 使用量。
-- **不懂時問答確認**：若使用者提供的指令不明確或不懂，必須透過問答的方式進行確認，不可盲目猜測。
-- **自動編譯確認**：每次修改程式碼後，直接執行 `npm run build` 進行確認錯誤，有錯誤就繼續修正。
-- **樣式修改規範**：若有需要修改 CSS，千萬不要使用 inline CSS，而是要透過 SCSS 進行修改，嚴禁直接修改 `main.css`。此外，修改 SCSS 後必須執行 `npx sass src/assets/scss/main.scss src/assets/css/main.css` 以確保同步。
-- **自動化 API 文件更新**：不管是修改還是新增任何檔案，都必須將其異動與關聯統整到 `src/docs/api_docs.html` 中，以方便後續整理交接。
-- **自動化 Git 提交與推送規範 (Auto Commit & Push)**：
-  - 確保每次修改程式碼且 `npm run build` 沒有問題後，必須自動執行 Git commit 與 push。
-  - 推送時必須透過 SSH 方式推送至遠端倉庫：`git@github.com:PutoLim0226/my-portfolio.git`。
-  - 自動使用 `--dangerously-skip-permissions` 與 `--auto-approve` 以免除權限與確認詢問。
-  - 以下指令不需要向使用者 Request 或詢問確認，應直接執行：
-    - `git pull`
-    - `npm run build`
-    - `git status`
-    - `git add .`
-    - `git commit`
-    - `git push`
 - **RTK Token Savings**: Must execute `rtk` (RTK Token Savings) to reduce token usage.
 - **Q&A Confirmation**: If the user's instructions/commands are unclear or not understood, always ask for clarification through Q&A. Do not guess.
 - **Auto-build Verification**: After each code modification, run `npm run build` directly to verify errors, and continue fixing if there are any.
