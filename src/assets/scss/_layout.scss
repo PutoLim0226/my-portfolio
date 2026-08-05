@@ -1,17 +1,17 @@
 @use 'variables' as *;
 
-:root {
-  // Colors (Forced Dark Theme for High-End Vibe)
-  --text: #{$dark-text};
-  --text-h: #{$dark-text-heading};
-  --bg: #{$dark-bg};
-  --border: #{$dark-border};
-  --code-bg: #{$dark-code-bg};
-  --accent: #{$dark-accent};
-  --accent-bg: #{$dark-accent-bg};
-  --accent-border: #{$dark-accent-border};
-  --social-bg: #{$dark-social-bg};
-  --shadow: #{$dark-shadow};
+:root, [data-theme="light"] {
+  // Colors - Light Theme
+  --text: #{$text};
+  --text-h: #{$text-heading};
+  --bg: #{$bg};
+  --border: #{$border};
+  --code-bg: #{$code-bg};
+  --accent: #{$accent};
+  --accent-bg: #{$accent-bg};
+  --accent-border: #{$accent-border};
+  --social-bg: #{$social-bg};
+  --shadow: #{$shadow};
 
   // Typography
   --sans: #{$font-sans};
@@ -23,26 +23,25 @@
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
-  color-scheme: light dark;
+  color-scheme: light;
 
   @media (max-width: $tablet) {
     font-size: 15px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #{$dark-text};
-    --text-h: #{$dark-text-heading};
-    --bg: #{$dark-bg};
-    --border: #{$dark-border};
-    --code-bg: #{$dark-code-bg};
-    --accent: #{$dark-accent};
-    --accent-bg: #{$dark-accent-bg};
-    --accent-border: #{$dark-accent-border};
-    --social-bg: #{$dark-social-bg};
-    --shadow: #{$dark-shadow};
-  }
+[data-theme="dark"] {
+  --text: #{$dark-text};
+  --text-h: #{$dark-text-heading};
+  --bg: #{$dark-bg};
+  --border: #{$dark-border};
+  --code-bg: #{$dark-code-bg};
+  --accent: #{$dark-accent};
+  --accent-bg: #{$dark-accent-bg};
+  --accent-border: #{$dark-accent-border};
+  --social-bg: #{$dark-social-bg};
+  --shadow: #{$dark-shadow};
+  color-scheme: dark;
 }
 
 #root {

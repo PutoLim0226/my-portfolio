@@ -16,13 +16,13 @@ const projects = [
   {
     id: 'vintage',
     image: 'mockups/vintage.jpg',
-    github: 'https://github.com/PutoLim0226/vintage-e-commerce',
+    github: null,
     demo: 'https://putolim0226.github.io/vintage-e-commerce/',
   },
   {
     id: 'aurora',
     image: 'mockups/aurora.jpg',
-    github: 'https://github.com/PutoLim0226/aurora-coffee',
+    github: null,
     demo: 'https://putolim0226.github.io/aurora-coffee/',
   },
   {
