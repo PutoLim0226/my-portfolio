@@ -1,17 +1,17 @@
 @use 'variables' as *;
 
 :root {
-  // Colors
-  --text: #{$text};
-  --text-h: #{$text-heading};
-  --bg: #{$bg};
-  --border: #{$border};
-  --code-bg: #{$code-bg};
-  --accent: #{$accent};
-  --accent-bg: #{$accent-bg};
-  --accent-border: #{$accent-border};
-  --social-bg: #{$social-bg};
-  --shadow: #{$shadow};
+  // Colors (Forced Dark Theme for High-End Vibe)
+  --text: #{$dark-text};
+  --text-h: #{$dark-text-heading};
+  --bg: #{$dark-bg};
+  --border: #{$dark-border};
+  --code-bg: #{$dark-code-bg};
+  --accent: #{$dark-accent};
+  --accent-bg: #{$dark-accent-bg};
+  --accent-border: #{$dark-accent-border};
+  --social-bg: #{$dark-social-bg};
+  --shadow: #{$dark-shadow};
 
   // Typography
   --sans: #{$font-sans};

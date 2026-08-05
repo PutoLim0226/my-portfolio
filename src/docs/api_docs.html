@@ -63,23 +63,24 @@
 
 <section class="api-section">
   <h3 class="api-section__name">Projects</h3>
-  <p class="api-section__desc">Featured project cards in a responsive grid (3→2→1 columns).</p>
+  <p class="api-section__desc">Featured project cards in a responsive grid (3→2→1 columns) with 3D glassmorphism and glare hover effects.</p>
   <table class="api-table">
     <thead><tr><th>Data Field</th><th>Type</th><th>Description</th></tr></thead>
     <tbody>
       <tr><td>title</td><td>string</td><td>Project name used as card heading and React key</td></tr>
       <tr><td>description</td><td>string</td><td>Brief project summary</td></tr>
       <tr><td>image</td><td>string (URL)</td><td>Card cover image URL</td></tr>
-      <tr><td>github</td><td>string (URL)</td><td>GitHub repository link</td></tr>
-      <tr><td>demo</td><td>string (URL)</td><td>Live demo link</td></tr>
+      <tr><td>github</td><td>string? (URL)</td><td>GitHub repository link (optional)</td></tr>
+      <tr><td>demo</td><td>string? (URL)</td><td>Live demo link (optional)</td></tr>
     </tbody>
   </table>
   <table class="api-table">
     <thead><tr><th>Element</th><th>Class</th><th>Description</th></tr></thead>
     <tbody>
       <tr><td>Grid</td><td><code>.projects__grid</code></td><td>CSS Grid container (responsive columns)</td></tr>
-      <tr><td>Card</td><td><code>.projects__card</code></td><td>Card wrapper with hover shadow + lift</td></tr>
-      <tr><td>Primary Link</td><td><code>.projects__link--primary</code></td><td>Filled accent button (Demo)</td></tr>
+      <tr><td>Card</td><td><code>.projects__card</code></td><td>Glassmorphism card wrapper with 3D transform hover effect and CSS variables (--x, --y)</td></tr>
+      <tr><td>Glare</td><td><code>.projects__card-glare</code></td><td>Absolute positioned glare layer tracking cursor</td></tr>
+      <tr><td>Primary Link</td><td><code>.projects__link--primary</code></td><td>Gradient accent button (Demo)</td></tr>
       <tr><td>Secondary Link</td><td><code>.projects__link--secondary</code></td><td>Ghost accent button (GitHub)</td></tr>
     </tbody>
   </table>
