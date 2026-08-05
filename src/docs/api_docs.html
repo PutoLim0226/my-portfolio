@@ -7,6 +7,7 @@
       <tr><td>Logo</td><td><code>.header__logo</code></td><td>Home link displaying site name</td></tr>
       <tr><td>Nav</td><td><code>.header__nav</code></td><td>Unordered list of navigation links</td></tr>
       <tr><td>Link</td><td><code>.header__link</code></td><td>Individual anchor link with hover effect</td></tr>
+      <tr><td>Lang Button</td><td><code>.header__lang-btn</code></td><td>Button for toggling i18n language</td></tr>
     </tbody>
   </table>
 </section>
@@ -67,9 +68,8 @@
   <table class="api-table">
     <thead><tr><th>Data Field</th><th>Type</th><th>Description</th></tr></thead>
     <tbody>
-      <tr><td>title</td><td>string</td><td>Project name used as card heading and React key</td></tr>
-      <tr><td>description</td><td>string</td><td>Brief project summary</td></tr>
-      <tr><td>image</td><td>string (URL)</td><td>Card cover image URL</td></tr>
+      <tr><td>id</td><td>string</td><td>Project ID used for i18n keys and React key</td></tr>
+      <tr><td>image</td><td>string (URL)</td><td>Card cover image path (resolved via BASE_URL)</td></tr>
       <tr><td>github</td><td>string? (URL)</td><td>GitHub repository link (optional)</td></tr>
       <tr><td>demo</td><td>string? (URL)</td><td>Live demo link (optional)</td></tr>
     </tbody>
