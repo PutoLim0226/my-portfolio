@@ -13,6 +13,16 @@
   --social-bg: #{$social-bg};
   --shadow: #{$shadow};
 
+  // Card & Element Colors for Light Mode
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(0, 0, 0, 0.1);
+  --text-shadow: none;
+  --glare-color: rgba(0, 0, 0, 0.05);
+  --btn-secondary-bg: rgba(0, 0, 0, 0.05);
+  --btn-secondary-border: rgba(0, 0, 0, 0.1);
+  --btn-secondary-hover-bg: rgba(0, 0, 0, 0.1);
+  --btn-secondary-hover-border: rgba(0, 0, 0, 0.2);
+
   // Typography
   --sans: #{$font-sans};
   --heading: #{$font-heading};
@@ -41,6 +51,17 @@
   --accent-border: #{$dark-accent-border};
   --social-bg: #{$dark-social-bg};
   --shadow: #{$dark-shadow};
+
+  // Card & Element Colors for Dark Mode
+  --card-bg: rgba(31, 32, 40, 0.7);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  --glare-color: rgba(255, 255, 255, 0.15);
+  --btn-secondary-bg: rgba(255, 255, 255, 0.05);
+  --btn-secondary-border: rgba(255, 255, 255, 0.1);
+  --btn-secondary-hover-bg: rgba(255, 255, 255, 0.1);
+  --btn-secondary-hover-border: rgba(255, 255, 255, 0.2);
+
   color-scheme: dark;
 }
 

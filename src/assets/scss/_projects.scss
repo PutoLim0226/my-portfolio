@@ -48,10 +48,10 @@
 
   &__card {
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--card-border);
     border-radius: 16px;
     overflow: hidden;
-    background: rgba(31, 32, 40, 0.7);
+    background: var(--card-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     transition: transform 0.1s ease-out, box-shadow 0.3s ease;
@@ -60,7 +60,7 @@
 
     &:hover {
       box-shadow: 0 20px 40px -10px rgba(192, 132, 252, 0.3), 0 0 20px rgba(56, 189, 248, 0.2);
-      border-color: rgba(255, 255, 255, 0.2);
+      border-color: var(--accent-border);
       
       .projects__card-glare {
         opacity: 1;
@@ -80,7 +80,7 @@
     transition: opacity 0.3s ease;
     background: radial-gradient(
       circle at var(--x, 50%) var(--y, 50%),
-      rgba(255, 255, 255, 0.15) 0%,
+      var(--glare-color) 0%,
       transparent 50%
     );
   }
@@ -105,7 +105,7 @@
     font-weight: 700;
     color: var(--text-h);
     margin: 0 0 0.5rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: var(--text-shadow);
   }
 
   &__desc {
@@ -160,13 +160,13 @@
     }
 
     &--secondary {
-      background: rgba(255, 255, 255, 0.05);
+      background: var(--btn-secondary-bg);
       color: var(--text-h);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--btn-secondary-border);
 
       &:hover {
-        background: rgba(255, 255, 255, 0.1);
-        border-color: rgba(255, 255, 255, 0.2);
+        background: var(--btn-secondary-hover-bg);
+        border-color: var(--btn-secondary-hover-border);
         transform: translateY(-2px);
         opacity: 1;
       }
