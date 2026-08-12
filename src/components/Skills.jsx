@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 
 const skillCategories = [
   { id: 'frontend', items: ['React', 'Tailwind CSS'] },
-  { id: 'backend', items: ['PHP'] },
+  { id: 'backend', items: ['PHP', 'Python', 'Go'] },
   { id: 'database', items: ['MySQL', 'Postgres', 'SQLite', 'Redis'] },
   { id: 'infrastructure', items: ['Linux', 'Nginx'] }
 ]
