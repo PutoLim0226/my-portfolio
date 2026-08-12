@@ -66,6 +66,16 @@
     width: 280px;
     height: auto;
     border-radius: 16px;
+    border: 2px solid var(--accent);
+    box-shadow: 0 10px 30px -10px rgba(234, 179, 8, 0.3);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      filter: grayscale(0%);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px -10px rgba(234, 179, 8, 0.5);
+    }
 
     @media (max-width: $tablet) {
       width: 200px;
