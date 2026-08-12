@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-const skills = ['React', 'PHP', 'MySQL', 'Redis', 'Linux']
+const skills = ['React', 'PHP', 'MySQL', 'Redis', 'Linux', 'Tailwind CSS', 'Postgres', 'Nginx', 'SQLite']
 
 function Skills() {
   const { t } = useTranslation()
