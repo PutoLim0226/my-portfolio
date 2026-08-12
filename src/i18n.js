@@ -19,7 +19,11 @@ const resources = {
         text: "I'm a full-stack developer passionate about performance optimization and clean architecture. With hands-on experience building web applications using React, PHP, and MySQL, I focus on delivering solutions that are both fast and maintainable. I also leverage Redis for caching and real-time data handling, and manage Linux server administration to ensure reliable, scalable deployments from development to production."
       },
       skills: {
-        title: "Tech Stack"
+        title: "Tech Stack",
+        frontend: "Frontend",
+        backend: "Backend",
+        database: "Database",
+        infrastructure: "Infrastructure"
       },
       projects: {
         title: "Featured Projects",
@@ -74,7 +78,11 @@ const resources = {
         text: "我是一名前端與後端皆具備經驗的全端工程師，對效能優化和乾淨的架構充滿熱情。我擁有使用 React、PHP 和 MySQL 建立網頁應用程式的實務經驗，並專注於提供快速且易於維護的解決方案。我也善用 Redis 進行快取和即時資料處理，並具備 Linux 伺服器管理能力，以確保從開發到正式環境的部署穩定且具擴展性。"
       },
       skills: {
-        title: "技術堆疊"
+        title: "技術堆疊",
+        frontend: "前端",
+        backend: "後端",
+        database: "資料庫",
+        infrastructure: "基礎設施"
       },
       projects: {
         title: "精選作品",

@@ -46,16 +46,19 @@
 
 <section class="api-section">
   <h3 class="api-section__name">Skills</h3>
-  <p class="api-section__desc">Tech stack displayed as pill-shaped tags.</p>
+  <p class="api-section__desc">Tech stack categorized into Frontend, Backend, Database, and Infrastructure displayed as pill-shaped tags.</p>
   <table class="api-table">
     <thead><tr><th>Data</th><th>Type</th><th>Description</th></tr></thead>
     <tbody>
-      <tr><td>skills</td><td>string[]</td><td>Array of skill names: React, PHP, MySQL, Redis, Linux, Tailwind CSS, Postgres, Nginx, SQLite</td></tr>
+      <tr><td>skillCategories</td><td>Array&lt;{id: string, items: string[]}&gt;</td><td>Array of skill categories. Categories include frontend, backend, database, and infrastructure.</td></tr>
     </tbody>
   </table>
   <table class="api-table">
     <thead><tr><th>Element</th><th>Class</th><th>Description</th></tr></thead>
     <tbody>
+      <tr><td>Categories Container</td><td><code>.skills__categories</code></td><td>Flex container for all skill categories</td></tr>
+      <tr><td>Category Block</td><td><code>.skills__category</code></td><td>Wrapper for a specific category</td></tr>
+      <tr><td>Category Title</td><td><code>.skills__category-title</code></td><td>Heading (h3) for the category name</td></tr>
       <tr><td>List</td><td><code>.skills__list</code></td><td>Flex-wrap container for tags</td></tr>
       <tr><td>Tag</td><td><code>.skills__tag</code></td><td>Individual pill tag with hover lift</td></tr>
     </tbody>

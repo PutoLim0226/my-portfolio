@@ -295,6 +295,22 @@ code {
     font-size: 1.5rem;
   }
 }
+.skills__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.skills__category {
+  text-align: center;
+}
+.skills__category-title {
+  font-size: 1.125rem;
+  color: var(--text-h);
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
 .skills__list {
   display: flex;
   flex-wrap: wrap;

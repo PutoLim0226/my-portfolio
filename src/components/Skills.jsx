@@ -1,6 +1,11 @@
 import { useTranslation } from 'react-i18next'
 
-const skills = ['React', 'PHP', 'MySQL', 'Redis', 'Linux', 'Tailwind CSS', 'Postgres', 'Nginx', 'SQLite']
+const skillCategories = [
+  { id: 'frontend', items: ['React', 'Tailwind CSS'] },
+  { id: 'backend', items: ['PHP'] },
+  { id: 'database', items: ['MySQL', 'Postgres', 'SQLite', 'Redis'] },
+  { id: 'infrastructure', items: ['Linux', 'Nginx'] }
+]
 
 function Skills() {
   const { t } = useTranslation()
@@ -8,11 +13,18 @@ function Skills() {
   return (
     <section id="skills" className="skills">
       <h2 className="skills__title">{t('skills.title')}</h2>
-      <ul className="skills__list">
-        {skills.map((skill) => (
-          <li key={skill} className="skills__tag">{skill}</li>
+      <div className="skills__categories">
+        {skillCategories.map((category) => (
+          <div key={category.id} className="skills__category">
+            <h3 className="skills__category-title">{t(`skills.${category.id}`)}</h3>
+            <ul className="skills__list">
+              {category.items.map((skill) => (
+                <li key={skill} className="skills__tag">{skill}</li>
+              ))}
+            </ul>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   )
 }
