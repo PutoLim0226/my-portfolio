@@ -17,7 +17,7 @@ const projects = [
     id: 'vintage',
     image: 'mockups/vintage.jpg',
     github: null,
-    demo: 'https://putolim0226.github.io/vintage-e-commerce/',
+    demo: 'http://45.32.25.8:8090/',
   },
   {
     id: 'aurora',
