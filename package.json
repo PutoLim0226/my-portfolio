@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && mkdir -p dist/en dist/zh_cn && cp dist/index.html dist/en/index.html && cp dist/index.html dist/zh_cn/index.html",
     "lint": "oxlint",
     "preview": "vite preview",
     "generate:resume": "python3 scripts/generate_resume.py",

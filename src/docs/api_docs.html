@@ -118,12 +118,12 @@
 
 <section class="api-section">
   <h3 class="api-section__name">Routing & Internationalization (i18n)</h3>
-  <p class="api-section__desc">Client-side language routing powered by GitHub Pages SPA redirect and i18next.</p>
+  <p class="api-section__desc">Client-side language routing powered by static HTML entry points (<code>dist/en/index.html</code>, <code>dist/zh_cn/index.html</code>) and GitHub Pages SPA fallback with i18next.</p>
   <table class="api-table">
     <thead><tr><th>Route Path</th><th>Locale</th><th>Behavior</th></tr></thead>
     <tbody>
-      <tr><td><code>/my-portfolio/en</code></td><td>English (<code>en</code>)</td><td>Loads portfolio in English, sets HTML lang="en"</td></tr>
-      <tr><td><code>/my-portfolio/zh_cn</code></td><td>Traditional/Simplified Chinese (<code>zh-TW</code>/<code>zh_cn</code>)</td><td>Loads portfolio in Chinese, sets HTML lang="zh-TW"</td></tr>
+      <tr><td><code>/my-portfolio/en</code></td><td>English (<code>en</code>)</td><td>Loads portfolio directly via static <code>en/index.html</code> (200 OK)</td></tr>
+      <tr><td><code>/my-portfolio/zh_cn</code></td><td>Traditional/Simplified Chinese (<code>zh-TW</code>/<code>zh_cn</code>)</td><td>Loads portfolio directly via static <code>zh_cn/index.html</code> (200 OK)</td></tr>
       <tr><td><code>/my-portfolio/</code></td><td>Auto Redirect</td><td>Detects saved language or defaults to English, replaces history state</td></tr>
       <tr><td><code>public/404.html</code></td><td>SPA Fallback</td><td>Intercepts sub-routes on GitHub Pages and redirects to query format <code>/?/&lt;path&gt;</code></td></tr>
     </tbody>
