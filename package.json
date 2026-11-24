@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
+    "generate:resume": "python3 scripts/generate_resume.py",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

@@ -7,6 +7,8 @@
       <tr><td>Logo</td><td><code>.header__logo</code></td><td>Home link displaying site name</td></tr>
       <tr><td>Nav</td><td><code>.header__nav</code></td><td>Unordered list of navigation links</td></tr>
       <tr><td>Link</td><td><code>.header__link</code></td><td>Individual anchor link with hover effect</td></tr>
+      <tr><td>Resume Link</td><td><code>.header__link</code></td><td>Direct link to localized resume PDF in new tab</td></tr>
+      <tr><td>Actions Container</td><td><code>.header__actions</code></td><td>Flex container for theme and language buttons</td></tr>
       <tr><td>Lang Button</td><td><code>.header__lang-btn</code></td><td>Button for toggling i18n language</td></tr>
     </tbody>
   </table>
@@ -27,6 +29,8 @@
       <tr><td>Title</td><td><code>.hero__title</code></td><td>Main heading (h1)</td></tr>
       <tr><td>Subtitle</td><td><code>.hero__subtitle</code></td><td>Short bio paragraph</td></tr>
       <tr><td>CTA</td><td><code>.hero__cta</code></td><td>Call-to-action button linking to #projects</td></tr>
+      <tr><td>Secondary CTA</td><td><code>.hero__cta--secondary</code></td><td>Secondary button linking to localized resume PDF</td></tr>
+      <tr><td>Actions</td><td><code>.hero__actions</code></td><td>Flex container for CTA buttons with responsive centering</td></tr>
       <tr><td>Image</td><td><code>.hero__image</code></td><td>Rounded avatar image</td></tr>
     </tbody>
   </table>
@@ -108,6 +112,33 @@
     <tbody>
       <tr><td>Text</td><td><code>.footer__text</code></td><td>Copyright line</td></tr>
       <tr><td>Link</td><td><code>.footer__link</code></td><td>External link to React / Vite</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="api-section">
+  <h3 class="api-section__name">Routing & Internationalization (i18n)</h3>
+  <p class="api-section__desc">Client-side language routing powered by GitHub Pages SPA redirect and i18next.</p>
+  <table class="api-table">
+    <thead><tr><th>Route Path</th><th>Locale</th><th>Behavior</th></tr></thead>
+    <tbody>
+      <tr><td><code>/my-portfolio/en</code></td><td>English (<code>en</code>)</td><td>Loads portfolio in English, sets HTML lang="en"</td></tr>
+      <tr><td><code>/my-portfolio/zh_cn</code></td><td>Traditional/Simplified Chinese (<code>zh-TW</code>/<code>zh_cn</code>)</td><td>Loads portfolio in Chinese, sets HTML lang="zh-TW"</td></tr>
+      <tr><td><code>/my-portfolio/</code></td><td>Auto Redirect</td><td>Detects saved language or defaults to English, replaces history state</td></tr>
+      <tr><td><code>public/404.html</code></td><td>SPA Fallback</td><td>Intercepts sub-routes on GitHub Pages and redirects to query format <code>/?/&lt;path&gt;</code></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="api-section">
+  <h3 class="api-section__name">Resume Endpoints</h3>
+  <p class="api-section__desc">Bilingual resume PDFs generated via ReportLab and hosted as static assets in <code>public/</code>.</p>
+  <table class="api-table">
+    <thead><tr><th>Asset Path</th><th>Language</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td><code>/my-portfolio/resume.pdf</code></td><td>Bilingual (EN + ZH)</td><td>2-Page comprehensive resume (Page 1 English, Page 2 Chinese)</td></tr>
+      <tr><td><code>/my-portfolio/resume_en.pdf</code></td><td>English</td><td>Single-page concise English resume</td></tr>
+      <tr><td><code>/my-portfolio/resume_zh.pdf</code></td><td>Chinese</td><td>Single-page concise Chinese resume</td></tr>
     </tbody>
   </table>
 </section>

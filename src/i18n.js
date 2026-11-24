@@ -7,12 +7,14 @@ const resources = {
       header: {
         about: "About",
         skills: "Skills",
-        projects: "Projects"
+        projects: "Projects",
+        resume: "Resume"
       },
       hero: {
-        title: "Hi, I'm PutoLim0226",
+        title: "Hi, I'm LIM JUN HUI (PutoLim0226)",
         subtitle: "Full-stack developer who builds fast, scalable web applications. I turn complex business problems into clean, maintainable code.",
-        cta: "View Projects"
+        cta: "View Projects",
+        resumeCta: "View Resume"
       },
       about: {
         title: "About Me",
@@ -66,12 +68,14 @@ const resources = {
       header: {
         about: "關於我",
         skills: "技能",
-        projects: "作品集"
+        projects: "作品集",
+        resume: "履歷"
       },
       hero: {
-        title: "你好，我是 PutoLim0226",
+        title: "你好，我是林俊匯 (PutoLim0226)",
         subtitle: "全端工程師，致力於建立快速、可擴展的網頁應用程式。我將複雜的商業問題轉化為乾淨、易於維護的程式碼。",
-        cta: "查看作品集"
+        cta: "查看作品集",
+        resumeCta: "查看履歷"
       },
       about: {
         title: "關於我",
@@ -121,6 +125,9 @@ const resources = {
     }
   }
 };
+
+resources['zh_cn'] = resources['zh-TW'];
+resources['zh'] = resources['zh-TW'];
 
 i18n
   .use(initReactI18next)

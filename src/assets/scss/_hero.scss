@@ -51,14 +51,36 @@
     font-family: var(--sans);
     color: #fff;
     background: var(--accent);
-    border: none;
+    border: 1px solid var(--accent);
     border-radius: 8px;
     cursor: pointer;
     text-decoration: none;
-    transition: opacity 0.3s;
+    transition: all 0.3s;
 
     &:hover {
       opacity: 0.85;
+    }
+
+    &--secondary {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+
+      &:hover {
+        background: rgba(234, 179, 8, 0.12);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    @media (max-width: $tablet) {
+      justify-content: center;
     }
   }
 
